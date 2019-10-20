@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+<body>
+    <div class="box">
+        <button id="addBtn" class="addBtn">添加数据</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>电影名称</th>
+                    <th>领衔主演</th>
+                    <th>已完成</th>
+                </tr>
+            </thead>
+            <tbody id = "tbody">
+                <tr>
+                    <td>哪吒</td>
+                    <td>饺子</td>
+                    <td>
+                        <a href="javascript:;">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>我和我的祖国</td>
+                    <td>黄渤</td>
+                    <td>
+                        <a href="javascript:;">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>中国机长</td>
+                    <td>张涵予</td>
+                    <td>
+                        <a href="javascript:;">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="cover" class="cover"></div>
+    <!-- 对话框 -->
+    <div id="dialog" class="dialog">
+        <h3>添加数据</h3>
+        <span class="close" id="close">X</span>
+        <div>
+            <label for="txt1">电影名称:</label>
+            <input type="text" placeholder="请输入电影名称" id="txt1">
+        </div>
+        <div>
+            <label for="txt2">领衔主演:</label>
+            <input type="text" value="兴" id="txt2">
+        </div>
+        <button class="comBtn">完成</button>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
